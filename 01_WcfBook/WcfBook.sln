@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfBook", "WcfBook\WcfBook.csproj", "{5C6ECA5E-917B-429B-9C17-01DDA04F719C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfBookWeb", "WcfBookWeb\WcfBookWeb.csproj", "{A300D0E1-FBB9-4097-BC72-B6C0E2D8E983}"
-	ProjectSection(ProjectDependencies) = postProject
-		{5C6ECA5E-917B-429B-9C17-01DDA04F719C} = {5C6ECA5E-917B-429B-9C17-01DDA04F719C}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
