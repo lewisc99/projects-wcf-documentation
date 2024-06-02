@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using System.Text;
-using System.Threading.Tasks;
 using wcfConsoleApp.Services;
 
 namespace wcfConsoleApp
@@ -12,6 +8,24 @@ namespace wcfConsoleApp
     public class Program
     {
         static void Main(string[] args)
+        {
+            // Create the ServiceHost for the MyService type.
+            using (ServiceHost host = new ServiceHost(typeof(MyService)))
+            {
+                // Open the ServiceHost to start listening for messages.
+                host.Open();
+
+                Console.WriteLine("The service is ready.");
+                Console.WriteLine("Press <Enter> to stop the service.");
+                Console.ReadLine();
+
+                // Close the ServiceHost.
+                host.Close();
+            }
+        }
+
+        #region Programatically Service Host without app.config or Web.config
+        public void CreateServiceHost()
         {
             // Create the ServiceHost for the MyService type.
             using (ServiceHost host = new ServiceHost(typeof(MyService)))
@@ -45,6 +59,7 @@ namespace wcfConsoleApp
                 // Close the ServiceHost.
                 host.Close();
             }
-        }
+        } 
+        #endregion
     }
 }
