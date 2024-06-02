@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfConsoleApp", "wcfConsoleApp.csproj", "{019262E5-608E-44EB-B756-62F72C6A5291}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfConsoleApp", "wcfConsoleApp\wcfConsoleApp.csproj", "{019262E5-608E-44EB-B756-62F72C6A5291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webFormsForRawWcf", "webFormsForRawWcf\webFormsForRawWcf.csproj", "{E2B1013E-38C8-49B8-8E8D-1DD96C1B91A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{019262E5-608E-44EB-B756-62F72C6A5291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{019262E5-608E-44EB-B756-62F72C6A5291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{019262E5-608E-44EB-B756-62F72C6A5291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B1013E-38C8-49B8-8E8D-1DD96C1B91A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B1013E-38C8-49B8-8E8D-1DD96C1B91A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B1013E-38C8-49B8-8E8D-1DD96C1B91A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B1013E-38C8-49B8-8E8D-1DD96C1B91A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

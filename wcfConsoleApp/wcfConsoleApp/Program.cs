@@ -28,6 +28,8 @@ namespace wcfConsoleApp
                 // Enable metadata exchange
                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                 smb.HttpGetEnabled = true;
+                smb.HttpGetUrl = new Uri("http://localhost:8000/MyService");
+
                 smb.MetadataExporter.PolicyVersion = PolicyVersion.Policy15;
                 host.Description.Behaviors.Add(smb);
 
