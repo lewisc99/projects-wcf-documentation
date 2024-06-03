@@ -15,10 +15,10 @@ namespace webFormsForRawWcf.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IMyContract")]
     public interface IMyContract {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMyContract/MyMethod", ReplyAction="http://tempuri.org/IMyContract/MyMethodResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.EncryptAndSign, Action="http://tempuri.org/IMyContract/MyMethod", ReplyAction="http://tempuri.org/IMyContract/MyMethodResponse")]
         string MyMethod(string data);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMyContract/MyMethod", ReplyAction="http://tempuri.org/IMyContract/MyMethodResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.EncryptAndSign, Action="http://tempuri.org/IMyContract/MyMethod", ReplyAction="http://tempuri.org/IMyContract/MyMethodResponse")]
         System.Threading.Tasks.Task<string> MyMethodAsync(string data);
     }
     

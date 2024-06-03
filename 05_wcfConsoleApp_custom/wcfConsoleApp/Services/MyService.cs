@@ -13,7 +13,7 @@ namespace wcfConsoleApp.Services
     {
         public string MyMethod(string data)
         {
-            return $"You sent: {data}";
+            return $"This data result is modified by the Server: {data}";
         }
 
         public int AnotherMethod(int number)
