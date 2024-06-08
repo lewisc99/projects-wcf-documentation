@@ -28,5 +28,9 @@ namespace wcfConsoleApp.Services
             new Uri("http://localhost:8001/MyService"));
         }
 
+        public Person GetPerson()
+        {
+            return new Person() { Age = 1, FirstName  = "Lewis", LastName = "Carlos" };
+        }
     }
 }

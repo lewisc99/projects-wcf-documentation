@@ -7,6 +7,9 @@ namespace wcfConsoleApp.Services
     {
         [OperationContract]
         string MyMethod(string data);
+
+        [OperationContract]
+        Person GetPerson();
     }
 
     [ServiceContract]
